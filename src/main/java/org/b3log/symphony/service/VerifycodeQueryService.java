@@ -66,7 +66,7 @@ public class VerifycodeQueryService {
         try {
             return verifycodeRepository.getFirst(query);
         } catch (final Exception e) {
-            LOGGER.log(Level.ERROR, "Gets verifycode failed", e);
+            LOGGER.log(Level.ERROR, "Failed to get verifycode", e);
             return null;
         }
     }

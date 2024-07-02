@@ -298,7 +298,7 @@ public class VoteMgmtService {
         if (Vote.DATA_TYPE_C_ARTICLE == dataType) {
             final JSONObject article = articleRepository.get(dataId);
             if (null == article) {
-                LOGGER.log(Level.ERROR, "Not found article [id={}] to vote down", dataId);
+                LOGGER.log(Level.ERROR, "Failed to find article [id={}] to vote down", dataId);
                 return;
             }
 

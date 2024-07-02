@@ -106,7 +106,7 @@ public class VisitMgmtService {
                     .setPageCount(1);
             visitRepository.remove(query);
         } catch (final Exception e) {
-            LOGGER.log(Level.ERROR, "Expires visits failed", e);
+            LOGGER.log(Level.ERROR, "Failed to expire the visits", e);
         }
     }
 }
